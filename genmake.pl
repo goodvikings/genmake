@@ -94,7 +94,7 @@ foreach my $file (@cFiles) {
 }
 
 $output =~ s/PLACEHOLDER/$links/;
-$output .= "clean:\n\trm *.o $prog\n";
+$output .= "clean:\n\trm *.o $prog\nlove:\n\t@echo Not war\n";
 
 print($output);
 
