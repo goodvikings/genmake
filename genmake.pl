@@ -50,6 +50,7 @@ while (my $file = readdir(DIR)) {
 	push(@oFiles, $bar);
 }
 
+
 closedir(DIR);
 
 $output .= "$prog:\t@oFiles\n\t\$(CC) @oFiles \$(LDFLAGS)\n";
