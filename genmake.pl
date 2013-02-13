@@ -115,3 +115,4 @@ sub genLinksHash {
 		"mysql" => "`mysql_config --cflags --libs`"
 	);
 }
+
