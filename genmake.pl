@@ -92,7 +92,7 @@ foreach my $file (@cFiles) {
 			}
 		}
 	}
-#	my $derp = true ? 1 : 2;
+	
 	my $object = $file;
 	$object =~ s/\.(c|cpp)$/.o/;
 	$output .= "\$(DIR)/$object:\t$file @headers\n\tcd \$(DIR) && \$(CC) ../$file \$(CCFLAGS)\n";
