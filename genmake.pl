@@ -11,9 +11,8 @@
 #
 # In it's current state, extra libs need to be added to the sub for generating
 # the lib hash for the linker options.
-# Also, if you want to change the compiler and flags you will need to do that
-# manually here by altering the $output variable (say change to clang++ for C++
-# compilation)
+# Also, if you want to change the compiler flags you will need to do that
+# manually here by altering the $output variable
 
 use strict;
 use warnings;
