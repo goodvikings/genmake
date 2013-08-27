@@ -102,8 +102,7 @@ foreach my $file (@cFiles) {
 }
 
 $output =~ s/PLACEHOLDER/$links/;
-$output .= "\$(BUILD):\n\t\@mkdir \$(BUILD)\n\$(DIST):\n\t\@mkdir \$(DIST)\nclean:\n\trm -rf \$(BUILD) \$(DIST)\nlove:\n\t\@echo Not war\n";
-
+$output .= "\$(BUILD):\n\t\@mkdir \$(BUILD)\n\$(DIST):\n\t\@mkdir \$(DIST)\nclean:\n\trm -rf \$(BUILD) \$(DIST)\ninstall:\n\tinstall \$(DIST)/$prog /usr/local/bin/\nlove:\n\t\@echo Not war\n";
 print($output);
 
 exit 0;
